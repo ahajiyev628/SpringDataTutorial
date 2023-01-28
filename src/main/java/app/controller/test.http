@@ -1,0 +1,45 @@
+####
+GET http://localhost:8080/person
+
+####
+GET http://localhost:8080/person/1
+
+####
+GET http://localhost:8080/person/123
+
+####
+POST http://localhost:8080/person
+Content-Type: application/json
+
+{
+  "username": "Jim1",
+  "password": "bla=bla-nla"
+}
+
+####
+POST http://localhost:8080/person
+Content-Type: application/json
+
+{
+  "username": "Ben",
+  "password": "qwe-asd"
+}
+
+#### INSERT
+POST http://localhost:8080/person/buggy
+Content-Type: application/json
+
+{
+  "username": "Alex",
+  "password": "123"
+}
+
+#### UPDATE
+POST http://localhost:8080/person/buggy
+Content-Type: application/json
+
+{
+  "id": 3,
+  "username": "ALEX",
+  "password": "123"
+}
